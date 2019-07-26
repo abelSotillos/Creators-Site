@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+     - Roxy: Bootstrap template by GettTemplates.com
+     - https://gettemplates.co/roxy
+    -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Roxy by GetTemplates.co</title>
+    <meta name="description" content="Roxy">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<style type="text/css">
+    
+#title{
+  text-align: center;
+  color:white;
+  font-size:30px;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+.hover-table-layout {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+     -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  max-width:1200px;
+  margin:0 auto;
+}
+.listing-item {
+   display: block;
+   width:100%;
+    margin-bottom:20px;
+    float: left;
+    background: #fff;
+    border-radius:10px;
+    z-index:0;
+    cursor:pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+        -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0);
+
+}
+.listing-item:hover,  .listing-item.active{
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    transform: scale(1.03);
+        -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index:2;
+
+}
+.listing-item .listing{
+    padding:20px;
+    position:relative; 
+}
+
+    figure.image img {
+        width:100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+figure.image {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+figure.image figcaption {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    bottom: 4px;
+    background: rgba(0,0,0,0);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+figcaption .caption{
+    position:relative;
+    top:50%;
+    -moz-transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%);
+
+}
+figcaption h1{
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+  text-transform: uppercase;
+}
+figcaption p{
+  color:white;
+  font-size:12px;
+}
+.listing h4 {
+ 
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 10px;
+    font-weight: bold;
+     color:white;
+}
+
+
+.listing-item:hover figure.image figcaption{
+       background: rgba(0,0,0,0);
+       color: #7E7E7E;
+
+}
+@media only screen and (min-width:540px){
+    .listing-item {
+   display: block;
+   width: -webkit-calc(100%/3);
+   width: -moz-calc(100%/3);
+    width: calc(100%/3);
+    background: #0F0F0F;
+    }
+    .listing-item:hover {
+         color: #7E7E7E;
+         box-shadow:0em 0em 3em 0.5em black;
+        }
+        .listing:hover {
+         color: #7E7E7E;
+        }
+}
+@media only screen and (min-width:1024px){
+    .hover-table-layout{
+        padding: 20px;
+    }
+}
+</style>
+</head>
+<body data-spy="scroll" data-target="#navbar" class="static-layout">
+  <nav id="header-navbar" class="navbar navbar-expand-lg py-4">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center text-white" href="index.html">
+            <h3 class="font-weight-bolder mb-0">CS</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lnr lnr-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-nav-header">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Profesionales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trabajo.html">Trabajo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Precios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contactanos</a>
+                </li>
+                 <li class="nav-item only-desktop">
+                    <a class="nav-link" id="side-nav-open" href="#">
+                        <span class="lnr lnr-menu"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="side-nav" class="sidenav">
+  <a href="javascript:void(0)" id="side-nav-close">&times;</a>
+  
+  <div class="sidenav-content">
+    <h3>
+    CONTACTA CON NOSOTROS</h3><p><br><br>Editor de vídeo<br><b>rodrigomahamud@gmail.com</b><br><br>
+    Editor de video y web<br><b>abelsotillos@gmail.com</b><br><br>  
+    </p>
+  </div>
+</div>	<div class="jumbotron d-flex align-items-center">
+  <div class="container text-center" data-aos="fade-up">
+    <h1 class="display-1 mb-4" style="font-size: 70px;">Precios</h1>
+  </div>
+  <div class="rectangle-1"></div>
+  <div class="rectangle-2"></div>
+  <div class="rectangle-transparent-1"></div>
+  <div class="rectangle-transparent-2"></div>
+  <div class="circle-1"></div>
+  <div class="circle-2"></div>
+  <div class="circle-3"></div>
+  <div class="triangle triangle-1">
+    <img src="img/obj_triangle.png" alt="">
+  </div>
+  <div class="triangle triangle-2">
+    <img src="img/obj_triangle.png" alt="">
+  </div>
+  <div class="triangle triangle-3">
+    <img src="img/obj_triangle.png" alt="">
+  </div>
+  <div class="triangle triangle-4">
+    <img src="img/obj_triangle.png" alt="">
+  </div>
+</div>
+<br><br>	<!-- Blog Section -->
+<section id="features" class="bg-white">
+    <div class="container">
+        <div class="section-content">
+            <!-- Section Title -->
+            <div class="title-wrap mb-5" data-aos="fade-up">
+                <h2 class="section-title2">En Creators Site te ofrecemos distintos packs de subscripción para que puedas escoger el que mejor se adapte a tus necesidades, la suscripción al pack que escojas se renovará automáticamente cada mes, de forma que no tengas que preocuparte por renovar constantemente la suscripción. Por el contrario, si en cualquier momento deseas cancelar no hay ningún problema, sigue las instrucciones del siguiente enlace <a style="color: #3E3E3E  ;" HREF=cp.html><u><i> cancelar subscripción</i></u></a>y automáticamente se anulará tu suscrición, rápido, sencillo y sin complicaciones.</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="hover-table-layout">
+    <div class="listing-item">
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <figure class="image">
+           
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="RKTJUU4HACTEE">
+              <input type="image" src="img/1P.png" border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
+                <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+            </form>
+        </figure>
+        <div class="listing">
+            <h4><b style="font-size: 20px;color:#7E7E7E ">38.3€/VÍDEO</b></h4>
+            <h4></h4>
+            <h4>3 Videos a 1080/60fps</h4>
+             <h4>3 Miniaturas</h4>
+              <h4></h4>
+              <h4></h4>
+        </div>
+      </form>
+    </div>
+    <div class="listing-item">
+        <figure class="image">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="C3VFC9JDQN7TJ">
+<input type="image" src="img/2P.png" border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
+<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+        </figure>
+        <div class="listing">
+            <h4><b style="font-size: 20px;color:#2f6ffa ">18.4€/VÍDEO</b></h4>
+            <h4></h4>
+            <h4>15 Vídeos 4K/60fps </h4>
+            <h4>15 Miniaturas</h4>
+            <h4>Logo, Banner, Header</h4>
+             <h4>Intro, Outro</h4>
+              <h4></h4>
+        </div>
+    </div>
+    <div class="listing-item">
+        <figure class="image">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="6JYYFMAQ5HFT4">
+<input type="image" src="img/3P.png" border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
+<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+</form>
+        </figure>
+        <div class="listing">
+            <h4><b style="font-size: 20px;color:#ff4393;">13.5€/VÍDEO</b></h4>
+            <br>
+            <h4>35 Vídeos 4K/60fps</h4>
+            <h4>35 Miniaturas</h4>
+            <h4>Logo, Banner, Header</h4>
+            <h4>Intro, Outro</h4>
+            <h4>-15% en diseño de WEB</h4>
+            <br>
+        </div>
+    </div>
+    </div>
+<br><br><br><br>
+<!-- End of Blog Section -->	<!-- Features Section-->
+<!-- End of Features Section--></div>
+<footer class="mastfoot my-3">
+    <div class="inner container">
+         <div class="row">
+         	<div class="col-lg-4 col-md-12 d-flex align-items-center">
+         		
+         	</div>
+         	<div class="col-lg-4 col-md-12 d-flex align-items-center">
+         		<p class="mx-auto text-center mb-0">&copy; 2019 Creado por Abel Sotillos Cuenca</p>
+         	</div>
+            
+        </div>
+    </div>
+</footer>
+	<!-- External JS -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="vendor/bootstrap/popper.min.js"></script>
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js "></script>
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="vendor/isotope/isotope.min.js"></script>
+	<script src="vendor/lightcase/lightcase.js"></script>
+	<script src="vendor/waypoints/waypoint.min.js"></script>
+	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	 
+	<!-- Main JS -->
+	<script src="js/app.min.js "></script>
+	<script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>
